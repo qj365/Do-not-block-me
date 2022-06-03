@@ -1,0 +1,19 @@
+{
+    "name": "Do not block me",
+    "description": "Redirect current page",
+    "version": "1.0",
+    "permissions": ["contextMenus", "tabs"],
+    "background": {
+        "scripts": ["main.js"]
+    },
+    "browser_action": {
+        "default_title": "Redirect current page.",
+        "default_icon": "icon.png"
+    },
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "manifest_version": 2
+}
