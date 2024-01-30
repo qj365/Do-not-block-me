@@ -1,12 +1,12 @@
-searchUrbanDict = function (word) {
+changeURL = function (word) {
     var query = word.linkUrl;
     chrome.tabs.create({
-        url: 'https://donotblock.me/' + query,
+        url: 'https://freedium.cfd/' + query,
     });
 };
 
 chrome.contextMenus.create({
     title: 'Open with Donotblockme',
     contexts: ['link'], // ContextType
-    onclick: searchUrbanDict, // A callback function
+    onclick: changeURL, // A callback function
 });
